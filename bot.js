@@ -108,7 +108,7 @@ client.on('message', message => {
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else     
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    client.user.setGame(argresult, "https://www.twitch.tv/Baktash_183");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   }
     if(message.content === adminprefix + "restart") {
