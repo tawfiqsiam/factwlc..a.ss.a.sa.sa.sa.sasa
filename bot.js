@@ -10,7 +10,7 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.get("497766943231836181");
+let channel = member.guild.channels.get("499668513317978140");
 if (member.user.bot) return;
 var Canvas = require('canvas')
 var jimp = require('jimp')
@@ -29,7 +29,7 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-const w = ['./welcome.png'];
+const w = ['./factwlc.png'];
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
                   ctx = canvas.getContext('2d');
@@ -97,7 +97,7 @@ const w = ['./welcome.png'];
 
 const devs = ["450711003324350485"]
 
-const adminprefix = "+";
+const adminprefix = "-";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -147,7 +147,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", (member) => {
 
-let channel = "497766943231836181"
+let channel = "499668513317978140"
 
     if (!channel) {
 
@@ -194,7 +194,7 @@ client.guilds.get(member.guild.id).channels.get(channel).send(`**Invited By** ${
 const RichEmbed = require("discord.js");
 
 client.on('message',async message => {
-    var prefix = "+";
+    var prefix = "-";
     if(message.content.startsWith(prefix + "bc")) {
       if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
       let filter = m => m.author.id === message.author.id;
@@ -237,7 +237,7 @@ client.on('message',async message => {
   });
     
                     client.on("message", message => {
-                         var prefix = "+";
+                         var prefix = "-";
                         if (message.content.startsWith(prefix + "obc")) {
                                      if (!message.member.hasPermission("ADMINISTRATOR"))  return;
               let args = message.content.split(" ").slice(1);
