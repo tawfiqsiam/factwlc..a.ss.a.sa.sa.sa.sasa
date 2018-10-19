@@ -29,7 +29,7 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-const w = ['./factwlc.png'];
+const w = ['./welcome.png'];
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
                   ctx = canvas.getContext('2d');
