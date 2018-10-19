@@ -9,7 +9,26 @@ var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
-
+client.on('guildMemberAdd', member => {
+let channel = member.guild.channels.get("497766943231836181");
+if (member.user.bot) return;
+var Canvas = require('canvas')
+var jimp = require('jimp')
+  var currentTime = new Date(),
+hours = currentTime.getHours() + 3 ,
+minutes = currentTime.getMinutes(),
+seconds = currentTime.getSeconds();
+if (minutes < 10) {
+minutes = "0" + minutes;
+}
+var suffix = "AM";
+if (hours >= 12) {
+suffix = "PM";
+hours = hours - 12;
+}
+if (hours == 0) {
+hours = 12;
+}
 const w = ['./welcome.png'];
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
