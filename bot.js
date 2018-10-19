@@ -174,7 +174,7 @@ let channel = "499668513317978140"
 
     while (!guild)
 
-        guild = client.guilds.get("499668513317978140");
+        guild = client.guilds.get("489465001229287434");
 
     guild.fetchInvites().then((data) => {
 
