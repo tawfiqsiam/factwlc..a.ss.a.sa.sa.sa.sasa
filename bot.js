@@ -15,7 +15,7 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.get("499668513317978140");
+let channel = member.guild.channels.get("495636666619396105");
 if (member.user.bot) return;
 var Canvas = require('canvas')
 var jimp = require('jimp')
